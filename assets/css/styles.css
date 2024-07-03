@@ -45,7 +45,7 @@ body {
 }
 
 h1#advice {
-    font-size: calc(25rem / 16);
+    font-size: calc(24rem / 16);
     font-weight: 800;
     color: var(--light-cyan);
     margin: 28px 0;
@@ -55,9 +55,9 @@ h1#advice {
 }
 
 h2#advice-heading {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 800;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     color: var(--neon-green);
 }
 
@@ -73,6 +73,12 @@ h2#advice-heading {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .6s;
+}
+
+#dice:hover {
+    box-shadow: 0 0 30px var(--neon-green);
+    transform: rotateZ(180deg);
 }
 
 
@@ -85,10 +91,13 @@ h2#advice-heading {
         align-items: center;
         flex-direction: column;
     }
+    #advice-container {
+        padding: 48px;
+    }
     h1#advice {
         font-size: calc(28rem / 16);
         margin: 28px 0;
-        padding-bottom: 40px;
+        padding-bottom: 50px;
         background: url("../images/pattern-divider-desktop.svg") no-repeat bottom;
         background-size: contain;
     }
