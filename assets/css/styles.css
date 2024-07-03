@@ -22,34 +22,76 @@ html {
 }
 
 body {
-    padding: 0;
-    margin: 0;
     min-height: 100vh;
     min-height: -webkit-fill-available; /* mobile viewport bug fix */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding: 120px 16px 16px 16px;
+    margin: 0;
+    font-size: 100%;
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    background-color: var(--dark-blue);
+    text-align: center;
+    font-weight: 800;
 }
 
-h1 {
-    font-size: calc(30rem / 16);
-    padding-left: 8px;
+#advice-container {
+    position: relative;
+    max-width: 100%;
+    width: calc(542rem / 16);
+    border-radius: 10px;
+    background-color: var(--dark-grayish-blue);
+    padding: 40px 24px;
 }
 
-#calc-container {
-    width: calc(588rem / 16);
-    padding: 24px;
+h1#advice {
+    font-size: calc(25rem / 16);
+    font-weight: 800;
+    color: var(--light-cyan);
+    margin: 28px 0;
+    padding-bottom: 40px;
+    background: url("../images/pattern-divider-mobile.svg") no-repeat bottom;
+    background-size: contain;
 }
 
-#calc-header {
+h2#advice-heading {
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--neon-green);
+}
+
+#dice {
+    position: absolute;
+    bottom: calc((65rem / 16) / -2);
+    left: 50%;
+    translate: calc((65rem / 16) / -2);;
+    width: calc(65rem / 16);
+    height: calc(65rem / 16);
+    border-radius: 50%;
+    background-color: var(--neon-green);
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-    width: 100%;
+    justify-content: center;
+}
+
+
+/* breakpoint for 574px wide (542px with 16px padding) */
+@media only screen and (min-width: 35.875rem) {
+    body {
+        padding: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    h1#advice {
+        font-size: calc(28rem / 16);
+        margin: 28px 0;
+        padding-bottom: 40px;
+        background: url("../images/pattern-divider-desktop.svg") no-repeat bottom;
+        background-size: contain;
+    }
+    
 }
 
