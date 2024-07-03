@@ -1,0 +1,48 @@
+:root {
+    --main-bg: hsl(222, 26%, 31%);
+}
+
+
+/* reset styles */
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    min-height: -webkit-fill-available; /* mobile viewport bug fix */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: calc(30rem / 16);
+    padding-left: 8px;
+}
+
+#calc-container {
+    width: calc(588rem / 16);
+    padding: 24px;
+}
+
+#calc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
