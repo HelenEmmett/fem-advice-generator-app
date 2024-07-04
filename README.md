@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [View the live solution](#) 
+- Solution URL: [View the live solution](https://helenemmett.github.io/fem-advice-generator-app/) 
 
 
 ## My process
@@ -40,7 +40,7 @@ I haven't yet found a way to animate a smooth transition for a div that resizes 
 
 ### Useful resources and acknowledgments
 
-- [Advice Slip API](https://api.adviceslip.com) - This free API was used to generate the advice.
+- [Advice Slip API](https://api.adviceslip.com) - This free API was used to generate the advice. Note: Advice is cached for 2 seconds. Any repeat-request within 2 seconds will return the same piece of advice.
 
 
 ## Author
