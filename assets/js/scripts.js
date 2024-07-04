@@ -1,9 +1,13 @@
-let adviceNum = document.getElementById("advice-num");
-let adviceTxt = document.getElementById("advice-text");
+let adviceContainer = document.getElementById("advice-container");
+let adviceNum = document.getElementById("advice-heading");
+let adviceTxt = document.getElementById("advice");
 let button = document.getElementById("dice");
 
 // add event listener to the dice button, and generate random advice
 button.addEventListener("click", () => {
+    adviceNum.style.opacity = 0;
+    adviceTxt.style.opacity = 0;
+
     fetch("https://api.adviceslip.com/advice")
     .then(response => {
         if (!response.ok) {
@@ -13,8 +17,10 @@ button.addEventListener("click", () => {
       })
       .then(data => {
         // Process the retrieved user data
-        adviceNum.innerText = data.slip.id;
-        adviceTxt.innerText = data.slip.advice;
+        adviceNum.innerText = `ADVICE #${data.slip.id}`;
+        adviceTxt.innerText = `"${data.slip.advice}"`;
+        adviceNum.style.opacity = 1;
+        adviceTxt.style.opacity = 1;
       })
       .catch(error => {
         console.error('Error:', error);

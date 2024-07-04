@@ -41,6 +41,7 @@ body {
     border-radius: 10px;
     background-color: var(--dark-grayish-blue);
     padding: 40px 24px;
+    transition: all .3s;
 }
 
 h1#advice {
@@ -51,6 +52,7 @@ h1#advice {
     padding-bottom: 40px;
     background: url("../images/pattern-divider-mobile.svg") no-repeat bottom;
     background-size: contain;
+    transition: all .3s;
 }
 
 h2#advice-heading {
@@ -58,6 +60,7 @@ h2#advice-heading {
     font-weight: 800;
     letter-spacing: 3px;
     color: var(--neon-green);
+    transition: all .3s;
 }
 
 #dice {
@@ -72,7 +75,7 @@ h2#advice-heading {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all .6s;
+    transition: all .3s;
 }
 
 #dice:hover {
